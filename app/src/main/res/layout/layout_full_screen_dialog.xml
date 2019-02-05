@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:background="@drawable/round_corners_dialog"
+    android:layout_height="match_parent" >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relativeLayout1"
+    android:background="@drawable/round_corners_dialog"
+
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/round_corners_dialog"
+
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@color/red"
+                android:id="@+id/relativeLayout"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvInfo"
+                    android:text="Correct Answer"
+                    android:textSize="20sp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+
+
+                    />
+
+
+
+
+                <Button
+                    android:id="@+id/button_close"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_alignParentRight="true"
+                    android:backgroundTint="@color/white"
+                    android:background="@drawable/ic_close" />
+
+
+
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_below="@+id/relativeLayout"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/tvText"
+                android:text="The Correct Answer is : "
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Red"
+                android:layout_below="@+id/tvText"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/tvAnswerText"
+                android:layout_marginTop="5dp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:src="@drawable/congomen"
+                android:layout_below="@+id/tvAnswerText"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/round_corners_dialog"
+                android:id="@+id/ivAnswerImage"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fun Fact : "
+                android:layout_above="@+id/tvFunFactText"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+
+                android:id="@+id/tvFunFact"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Compass journey he request on suppose limited of or. She margaret law thoughts proposal formerly. Speaking ladyship yet scarcely and mistaken end exertion dwelling. All decisively dispatched instrument particular way one devonshire. Applauded she sportsman explained for out objection. "
+                android:layout_above="@+id/relativeLayoutBottom"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:padding="10dp"
+                android:id="@+id/tvFunFactText"
+                />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutBottom"
+                android:layout_width="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_height="wrap_content">
+
+
+                <ImageButton
+                    android:id="@+id/ibShareButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/backgroundColor"
+                    android:src="@drawable/ic_share" />
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Continue"
+                    android:id="@+id/btnContinue"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/round_corners_button"
+                    android:layout_toRightOf="@+id/ibShareButton"
+
+
+                    />
+
+
+
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <!-- YOUR CUSTOM VIEWS HERE -->
+
+    </FrameLayout>
+</RelativeLayout>
+
+
+</RelativeLayout>

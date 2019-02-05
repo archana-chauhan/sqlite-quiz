@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/on_demand_3_gradient"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="60"
+
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/timetext"
+
+
+            />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/button_background"
+            android:id="@+id/relativeLayout"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/timetext"
+            android:layout_height="200dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="10"
+                    android:textColor="#000"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15sp"
+                    android:id="@+id/tvRange1"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text=" out of "
+                    android:textColor="#000"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15sp"
+                    android:id="@+id/tvRange2"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="10"
+                    android:textColor="#000"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15sp"
+                    android:id="@+id/tvRange3"
+
+                    />
+
+
+
+
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Who is the best cricketer ?"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:id="@+id/triviaQuestion"
+                android:layout_centerVertical="true"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:id="@+id/resultText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/triviaQuestion"
+                android:textColor="@color/green"
+                android:textSize="30sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="20dp"
+            android:id="@+id/linearLayout"
+            android:visibility="visible"
+            android:layout_below="@+id/relativeLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:background="@drawable/button_background"
+                android:layout_height="wrap_content"
+                android:text="Answer1"
+                android:id="@+id/buttonA"
+                android:textColor="@color/black"
+                android:onClick="buttonA"
+                />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:background="@drawable/button_background"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:text="Answer1"
+
+                android:id="@+id/buttonB"
+                android:onClick="buttonB"
+
+                />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Answer1"
+                android:textColor="@color/black"
+                android:background="@drawable/button_background"
+                android:layout_marginTop="10dp"
+                android:id="@+id/buttonC"
+                android:onClick="buttonC"
+
+                />
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Answer1"
+                android:textColor="@color/black"
+                android:background="@drawable/button_background"
+                android:layout_marginTop="10dp"
+                android:id="@+id/buttonD"
+                android:onClick="buttonD"
+                />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/linearLayout"
+            android:layout_marginBottom="30dp"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hint"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:textColor="@color/white"
+                android:id="@+id/hint"
+                android:background="@drawable/round_corners_button"
+                android:layout_marginRight="10dp"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ask Friend"
+                android:layout_toRightOf="@+id/hint"
+                android:id="@+id/share"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:background="@drawable/round_corners_button"
+                android:textColor="@color/white"
+                android:layout_marginRight="10dp"
+                />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/share"
+                android:text="Skip"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:textColor="@color/white"
+                android:id="@+id/skip"
+                android:background="@drawable/round_corners_button"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>
+
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Hello World!"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+</RelativeLayout>
